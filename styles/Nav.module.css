@@ -1,0 +1,18 @@
+.nav {
+	padding: 1rem;
+	background: #2b2b2b;
+	color: #fefefb;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.nav ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+}
+
+.nav ul li {
+	margin: 0.5rem 1rem;
+}
