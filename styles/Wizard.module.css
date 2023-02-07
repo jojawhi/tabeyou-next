@@ -1,0 +1,63 @@
+.pageContainer {
+	width: 60%;
+	height: 70vh;
+	box-shadow: 0 1px 4px 1px grey;
+	padding: 1rem;
+	transition: all 300ms ease-in-out;
+}
+
+.step1 {
+	background-color: lightseagreen;
+}
+
+.step2 {
+	background-color: lightcoral;
+}
+
+.step3 {
+	background-color: lightgoldenrodyellow;
+}
+
+/* .slideOutToRight {
+	transform: translate(100%, 0%);
+	opacity: 0;
+	transition: all 300ms ease-in-out;
+} */
+
+.slideInFromRight {
+	animation: slideInFromRight 500ms linear forwards;
+}
+
+/* .slideOutToLeft {
+	transform: translate(100%, 0%);
+	opacity: 0;
+	transition: all 300ms ease-in-out;
+} */
+
+.slideInFromLeft {
+	animation: slideInFromLeft 500ms linear forwards;
+}
+
+@keyframes slideInFromRight {
+	from {
+		opacity: 0;
+		transform: translate(50%, 0%);
+	}
+
+	to {
+		opacity: 1;
+		transform: translate(0%, 0%);
+	}
+}
+
+@keyframes slideInFromLeft {
+	from {
+		opacity: 0;
+		transform: translate(-50%, 0%);
+	}
+
+	to {
+		opacity: 1;
+		transform: translate(0%, 0%);
+	}
+}
